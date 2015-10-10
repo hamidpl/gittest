@@ -1,0 +1,226 @@
+@import 'font-awesome.min.css';
+@font-face {
+  font-family: 'IranSharp';
+  src: url('../fonts/IRANSharp.eot?#') format('eot'), /* IE6–8 */ url('../fonts/IRANSharp.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/IRANSharp.svg') format('svg');
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.indent {
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  line-height: 0;
+  font-size: 0;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: 'IranSharp', tahoma;
+  font-weight: normal;
+  color: #333;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+.container {
+  width: 760px;
+  margin: 0 auto;
+}
+header {
+  height: 80px;
+  background-color: #c66;
+}
+header .container {
+  position: relative;
+}
+header h1 {
+  margin: 0;
+}
+header h1 a {
+  display: block;
+  line-height: 80px;
+  color: #fff;
+}
+header .sharing {
+  position: absolute;
+  top: 80px;
+  left: 130px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+header .sharing .menu-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header .sharing .menu-items .menu-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+header .sharing .menu-toggle-button,
+header .sharing .menu-item-bounce,
+header .sharing .menu-item-button {
+  background: #4CAF50;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  color: #fff;
+  border: none;
+  outline: none;
+  position: relative;
+}
+header .sharing .menu-toggle-button {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .sharing .menu-item-bounce {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .sharing .menu-item-bounce {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+header .sharing .menu-item-button {
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+header .sharing .menu-item-button {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+header .sharing .menu-item-button.twitter:hover {
+  background-color: #00aced;
+}
+header .sharing .menu-item-button.facebook:hover {
+  background-color: #3b5998;
+}
+header .sharing .menu-item-button.google-plus:hover {
+  background-color: #dd4b39;
+}
+header .sharing .menu-item-button i {
+  line-height: 40px;
+}
+header .sharing .menu-toggle-icon {
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+}
+.content {
+  margin-top: 40px;
+}
+.content .cover {
+  display: block;
+  float: right;
+}
+.content .music-info {
+  float: left;
+  width: 60%;
+}
+.content .music-info ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 80px;
+}
+.content .music-info ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 30px;
+}
+.content .music-info ul li.music-name {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.content .music-info .mobozik-dl {
+  line-height: 28px;
+}
+.content .music-info .download {
+  display: inline-block;
+}
+.content .music-info .download img {
+  display: block;
+}
+.content .lyrics {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 0.9em;
+  background-color: #f3f3f3;
+}
+@media (max-width: 760px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .content .cover {
+    float: none;
+    margin: 0 auto;
+    width: 200px;
+  }
+  .content .music-info {
+    float: none;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .content .music-info ul {
+    margin-bottom: 0;
+  }
+  .content .music-info .mobozik-dl {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+}
